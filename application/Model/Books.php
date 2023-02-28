@@ -65,7 +65,7 @@ class Books extends Model
     {
         $sql = "DELETE FROM books WHERE id = :book_id";
         $query = $this->db->prepare($sql);
-        $parameters = array(':book_id' => $song_id);
+        $parameters = array(':book_id' => $book_id);
 
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
@@ -77,7 +77,7 @@ class Books extends Model
      * Get a book from database
      * @param integer $book_id
      */
-    public function getSong($book_id)
+    public function getBook($book_id)
     {
         $sql = "SELECT id, author, title, link FROM books WHERE id = :book_id LIMIT 1";
         $query = $this->db->prepare($sql);
@@ -104,11 +104,11 @@ class Books extends Model
      * @param string $link Link
      * @param int $book_id Id
      */
-    public function updateBook($book, $title, $link, $book_id)
+    public function updateBook($author, $title, $link, $book_id)
     {
         $sql = "UPDATE books SET author = :author, title = :title, link = :link WHERE id = :book_id";
         $query = $this->db->prepare($sql);
-        $parameters = array(':author' => $author, ':title' => $title, ':link' => $link, ':song_id' => $song_id);
+        $parameters = array(':author' => $author, ':title' => $title, ':link' => $link, ':book_id' => $book_id);
 
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
