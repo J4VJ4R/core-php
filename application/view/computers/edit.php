@@ -1,9 +1,9 @@
 <div class="container">
     <h2>You are in the View: application/view/computers/edit.php (everything in this box comes from that file)</h2>
-    <!-- add book form -->
+    <!-- add computer form -->
     <div>
         <h3>Edit a computer</h3>
-        <form action="<?php echo URL; ?>computer/updatecomputer" method="POST">
+        <form action="<?php echo URL; ?>computers/updatecomputer" method="POST">
             <label>Brand</label>
             <input autofocus type="text" name="brand" value="<?php echo htmlspecialchars($computer->brand, ENT_QUOTES, 'UTF-8'); ?>" required />
             <label>Description</label>

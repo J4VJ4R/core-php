@@ -65,7 +65,7 @@ class Computers extends Model
     {
         $sql = "DELETE FROM computers WHERE id = :computer_id";
         $query = $this->db->prepare($sql);
-        $parameters = array(':book_id' => $book_id);
+        $parameters = array(':computer_id' => $computer_id);
 
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
