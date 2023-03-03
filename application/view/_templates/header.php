@@ -24,4 +24,5 @@
         <a href="<?php echo URL; ?>home/exampletwo">home/exampletwo</a>
         <a href="<?php echo URL; ?>songs">Songs</a>
         <a href="<?php echo URL; ?>books">Books</a>
+        <a href="<?php echo URL; ?>computers">Computers</a>
     </div>

@@ -38,8 +38,8 @@
             <?php foreach ($computers as $computer) { ?>
                 <tr>
                     <td><?php if (isset($computer->id)) echo htmlspecialchars($computer->id, ENT_QUOTES, 'UTF-8'); ?></td>
-                    <td><?php if (isset($computer->brand)) echo htmlspecialchars($computer->author, ENT_QUOTES, 'UTF-8'); ?></td>
-                    <td><?php if (isset($computer->description)) echo htmlspecialchars($computer->title, ENT_QUOTES, 'UTF-8'); ?></td>
+                    <td><?php if (isset($computer->brand)) echo htmlspecialchars($computer->brand, ENT_QUOTES, 'UTF-8'); ?></td>
+                    <td><?php if (isset($computer->description)) echo htmlspecialchars($computer->description, ENT_QUOTES, 'UTF-8'); ?></td>
                     <td>
                         <?php if (isset($computer->link)) { ?>
                             <a href="<?php echo htmlspecialchars($computer->link, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($computer->link, ENT_QUOTES, 'UTF-8'); ?></a>
