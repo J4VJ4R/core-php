@@ -1,4 +1,2 @@
 vendor/
-chat_system/
-php-poo/
-vendor_copy/
+application/cache

@@ -36,6 +36,26 @@ class SongsController
         require APP . 'view/_templates/footer.php';
     }
 
+     /**
+     * PAGE: index
+     * This method handles what happens when you move to http://yourproject/songs/index
+     */
+    public function contwig()
+    {
+        global $twig;
+        // Instance new Model (Song)
+        $Song = new Song();
+        // getting all songs and amount of songs
+        $songs = $Song->getAllSongs();
+        $amount_of_songs = $Song->getAmountOfSongs();
+
+       // load views. within the views we can echo out $songs and $amount_of_songs easily
+        require APP . 'view/_templates/header.php';
+        $mipage = $twig->load('custom/mipage.html.twig');
+        echo $mipage->render();
+        require APP . 'view/_templates/footer.php';
+    }
+    
     /**
      * ACTION: addSong
      * This method handles what happens when you move to http://yourproject/songs/addsong

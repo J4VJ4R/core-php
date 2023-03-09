@@ -19,8 +19,14 @@ class Application
      */
     public function __construct()
     {
+        global $twig, $session, $lang;
         // create array with URL parts in $url
         $this->splitUrl();
+        $loader = new \Twig\Loader\FilesystemLoader(APP.'/view/twig');
+        $twig = new \Twig\Environment($loader, [
+            'cache' => APP.'/cache'
+        ]);
+        $twig->addGlobal('lang', $lang);
 
         // check for controller: no controller given ? then load start-page
         if (!$this->url_controller) {
