@@ -47,12 +47,12 @@ class SongsController
         $Song = new Song();
         // getting all songs and amount of songs
         $songs = $Song->getAllSongs();
-        $amount_of_songs = $Song->getAmountOfSongs();
+        $testsongs = $Song->getAmountOfSongs();
 
        // load views. within the views we can echo out $songs and $amount_of_songs easily
         require APP . 'view/_templates/header.php';
         $mipage = $twig->load('custom/mipage.html.twig');
-        echo $mipage->render();
+        echo $mipage->render(['test' => $testsongs]);
         require APP . 'view/_templates/footer.php';
     }
     
