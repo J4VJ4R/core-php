@@ -21,7 +21,7 @@ $(function() {
 
             // send an ajax-request to this URL: current-server.com/songs/ajaxGetStats
             // "url" is defined in views/_templates/footer.php
-            $.ajax(url + "/computers/ajaxGetStats")
+            $.ajax(url + "/songs/ajaxGetStats")
                 .done(function(result) {
                     // this will be executed if the ajax-call was successful
                     // here we get the feedback from the ajax-call (result) and show it in #javascript-ajax-result-box
@@ -35,5 +35,14 @@ $(function() {
                 });
         });
     }
+    if ($('#javascript-door-button').length !== 0){
+        $('#javascript-door-button').on('click', function(){
+            $.ajax(url + "/songs/door")
+            .done(function(result){
+                $('#javascript-ajax-result-door').html(result);
+            });
+        })
+    }
+    
 
 });

@@ -163,5 +163,17 @@ class SongsController
         // simply echo out something. A supersimple API would be possible by echoing JSON here
         echo $amount_of_songs;
     }
+    /**
+     * AJAX-ACTION: ajaxGetStats
+     * TODO documentation
+     */
+    public function door()
+    {
+        // Instance new Model (Song)
+        // $Song = new Song();
+        // $amount_of_songs = $Song->getAmountOfSongs();
 
+        // simply echo out something. A supersimple API would be possible by echoing JSON here
+        echo "Port is open";
+    }
 }

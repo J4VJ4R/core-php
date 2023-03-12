@@ -19,8 +19,10 @@
         <h3>Amount of songs: <?php echo $amount_of_songs; ?></h3>
         <h3>Amount of songs (via AJAX)</h3>
         <div id="javascript-ajax-result-box"></div>
+        <div id="javascript-ajax-result-door"></div>
         <div>
             <button id="javascript-ajax-button">Click here to get the amount of songs via Ajax (will be displayed in #javascript-ajax-result-box ABOVE)</button>
+            <button id="javascript-door-button">Click here to open the door</button>
         </div>
         <h3>List of songs (data from model)</h3>
         <table>
