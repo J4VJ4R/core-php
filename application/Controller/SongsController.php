@@ -15,6 +15,7 @@
 namespace Mini\Controller;
 
 use Mini\Model\Song;
+use Mini\Model\Books;
 
 class SongsController
 {
@@ -176,4 +177,5 @@ class SongsController
         // simply echo out something. A supersimple API would be possible by echoing JSON here
         echo "Port is open";
     }
+    
 }

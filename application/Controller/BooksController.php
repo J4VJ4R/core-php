@@ -143,5 +143,6 @@ class BooksController
         // simply echo out something. A supersimple API would be possible by echoing JSON here
         echo $amount_of_books;
     }
+    
 
 }

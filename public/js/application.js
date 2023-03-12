@@ -43,6 +43,22 @@ $(function() {
             });
         })
     }
+    if ($('#javascript-ajax-button').length !== 0){
+        $('#javascript-ajax-button').on('click', function(){
+            $.ajax(url + "/books/ajaxGetStats")
+            .done(function(result){
+                $('#javascript-ajax-result-box').html(result);
+            });
+        })
+    }
+    if($('#javascript-ajax-button').length !== 0){
+        $('#javascript-ajax-button').on('click', function(){
+            $.ajax(url + "/computers/ajaxGetStats")
+            .done(function(result){
+                $('#javascript-ajax-result-box').html(result);
+            });
+        })
+    }
     
 
 });
