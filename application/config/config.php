@@ -55,7 +55,7 @@ define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
  */
 define('DB_TYPE', 'pgsql');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'mini');
-define('DB_USER', 'jara');
+define('DB_NAME', 'mini2');
+define('DB_USER', 'jara1');
 define('DB_PASS', '123');
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'UTF8');
