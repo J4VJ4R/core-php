@@ -44,7 +44,16 @@ class HomeController
         require APP . 'view/_templates/header.php';
         require APP . 'view/home/example_three.php';
         require APP . 'view/_templates/footer.php';
-    }    
+    }  
+    
+    //otro ejemplo de funcion
+    public function exampleFour($arg1 = 'Diego', $arg2 = 'Jaime')
+    {
+        // load views
+        require APP . 'view/_templates/header.php';
+        require APP . 'view/home/example_four.php';
+        require APP . 'view/_templates/footer.php';
+    }
     /**
      * PAGE: exampletwo
      * This method handles what happens when you move to http://yourproject/home/exampletwo

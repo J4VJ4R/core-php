@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Songs</h1>
-    <h2>You are in the View: application/view/song/index.php (everything in this box comes from that file)</h2>
+    <h2>Aqui puedes ver la lista de canciones</h2>
     <!-- add song form -->
     <div class="box">
         <h3>Add a song</h3>
