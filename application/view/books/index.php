@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Books</h1>
-    <h2>You are in the View: application/view/books/index.php (everything in this box comes from that file)</h2>
+    <h2>This is a sandbox</h2>
     <!-- add book form -->
     <div class="box">
         <h3>Add a book</h3>

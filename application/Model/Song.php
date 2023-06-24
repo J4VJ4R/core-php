@@ -129,4 +129,12 @@ class Song extends Model
         // fetch() is the PDO method that get exactly one result
         return $query->fetch()->amount_of_songs;
     }
+    public function getAllArtists()
+    {
+        $sql = "SELECT DISTINCT artist FROM song";
+        $query = $this->db->prepare($sql);
+        $query->execute();
+
+        return $query->fetchAll();
+    }
 }

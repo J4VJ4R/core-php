@@ -9,7 +9,7 @@
 <ul>
     <li><?php echo $arg1 ?></li>
     <li><?php echo $arg2 ?></li>
-    <li>Item 3</li>
+    <li><?php echo $arg1 ?></li>
 </ul>
 
 <button>Click me</button>

@@ -43,6 +43,14 @@ $(function() {
             });
         })
     }
+    if($('#javascript-allartist-button').length !== 0){
+        $('#javascript-allartist-button').on('click', function(){
+            $.ajax(url + "/songs/allArtists")
+            .done(function(result){
+                $('#javascript-ajax-result-allartist').html(result);
+            });
+        })
+    }
     if ($('#javascript-ajax-button').length !== 0){
         $('#javascript-ajax-button').on('click', function(){
             $.ajax(url + "/books/ajaxGetStats")

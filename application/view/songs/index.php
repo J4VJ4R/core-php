@@ -20,9 +20,11 @@
         <h3>Amount of songs (via AJAX)</h3>
         <div id="javascript-ajax-result-box"></div>
         <div id="javascript-ajax-result-door"></div>
+        <div id="javascript-ajax-result-allartist"></div>
         <div>
             <button id="javascript-ajax-button">Click here to get the amount of items via Ajax (will be displayed in #javascript-ajax-result-box ABOVE)</button>
-            <button id="javascript-door-button">Click here to open the door</button>
+            <button id="javascript-door-button">Click here to open the door si</button>
+            <button id="javascript-allartist-button">Click here to give all artists</button>
         </div>
         <h3>List of songs (data from model)</h3>
         <table>

@@ -177,5 +177,20 @@ class SongsController
         // simply echo out something. A supersimple API would be possible by echoing JSON here
         echo "Port is open";
     }
+    /**
+     * AJAX-ACTION: allArtists
+     * The function returns all artists from the database to the view
+     * No parameters
+     */
+    public function allArtists()
+    {
+        // Instance new Model (Song)
+        $Artists = new Song();
+       
+        echo "All artists";
+        $allArtists = $Artists->getAllArtists();
+        echo json_encode($allArtists);
+    }
+
     
 }

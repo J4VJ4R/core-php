@@ -47,7 +47,7 @@ class HomeController
     }  
     
     //otro ejemplo de funcion
-    public function exampleFour($arg1 = 'Diego', $arg2 = 'Jaime')
+    public function exampleFour($arg1 = "Soo", $arg2 = 'Poo')
     {
         // load views
         require APP . 'view/_templates/header.php';

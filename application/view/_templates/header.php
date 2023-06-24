@@ -22,7 +22,7 @@
 
     <!-- navigation -->
     <div class="navigation">
-        <a href="<?php echo URL; ?>">home</a>
+        <a href="<?php echo URL; ?>">home javi</a>
         <a href="<?php echo URL; ?>home/exampleone">home/exampleone</a>
         <a href="<?php echo URL; ?>home/exampletwo">home/exampletwo</a>
         <a href="<?php echo URL; ?>songs">Songs</a>
