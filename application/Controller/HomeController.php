@@ -25,6 +25,9 @@ class HomeController
         require APP . 'view/_templates/footer.php';
     }
 
+    public function conTwig(){
+        global $twig;
+    }
     /**
      * PAGE: exampleone
      * This method handles what happens when you move to http://yourproject/home/exampleone
